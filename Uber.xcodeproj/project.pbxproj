@@ -11,9 +11,9 @@
 		17295A0D290448D5001C7154 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17295A0C290448D5001C7154 /* SceneDelegate.swift */; };
 		17295A0F290448D5001C7154 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17295A0E290448D5001C7154 /* LoginController.swift */; };
 		17295A12290448D5001C7154 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17295A10290448D5001C7154 /* Main.storyboard */; };
-		17295A14290448D8001C7154 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17295A13290448D8001C7154 /* Assets.xcassets */; };
 		17295A17290448D8001C7154 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17295A15290448D8001C7154 /* LaunchScreen.storyboard */; };
 		172D71C829072296009645FB /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172D71C729072296009645FB /* UIView+.swift */; };
+		172D71CA290730BD009645FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 172D71C9290730BD009645FB /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +22,10 @@
 		17295A0C290448D5001C7154 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		17295A0E290448D5001C7154 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		17295A11290448D5001C7154 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		17295A13290448D8001C7154 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17295A16290448D8001C7154 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17295A18290448D8001C7154 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		172D71C729072296009645FB /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		172D71C9290730BD009645FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../Downloads/UberTutorial/UberTutorial/Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,9 +66,9 @@
 				17295A0A290448D5001C7154 /* AppDelegate.swift */,
 				17295A0C290448D5001C7154 /* SceneDelegate.swift */,
 				17295A10290448D5001C7154 /* Main.storyboard */,
-				17295A13290448D8001C7154 /* Assets.xcassets */,
 				17295A15290448D8001C7154 /* LaunchScreen.storyboard */,
 				17295A18290448D8001C7154 /* Info.plist */,
+				172D71C9290730BD009645FB /* Assets.xcassets */,
 			);
 			path = Uber;
 			sourceTree = "<group>";
@@ -169,7 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17295A17290448D8001C7154 /* LaunchScreen.storyboard in Resources */,
-				17295A14290448D8001C7154 /* Assets.xcassets in Resources */,
+				172D71CA290730BD009645FB /* Assets.xcassets in Resources */,
 				17295A12290448D5001C7154 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
