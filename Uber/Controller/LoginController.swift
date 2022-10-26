@@ -79,16 +79,18 @@ class LoginController: UIViewController {
     }
 }
 
-//MARK: Selectors
+
 extension LoginController {
+    //MARK: - Selectors
     @objc func handleShowSignUp(){
         let controller = SignUpController()
         navigationController?.pushViewController(controller, animated: true)
     }
 }
 
-//MARK: - Helper Functions
+
 extension LoginController {
+    //MARK: - Helper Functions
     private func configureUI() {
         
         view.backgroundColor = .backgroundColor
@@ -118,6 +120,7 @@ extension LoginController {
     }
     
     private func configureNavigationBar() {
+        navigationController?.navigationBar.isHidden = true
         navigationController?.navigationBar.barStyle = .black
     }
 }
