@@ -34,6 +34,12 @@ class SignUpController: UIViewController {
         view.heightAnchor.constraint(equalToConstant: 50).isActive = true
         return view
     }()
+    
+    private lazy var accountTypeContainerView: UIView = {
+        let view = UIView().inputContainerView(image: UIImage(named: "ic_account_box_white_2x"), segmentedControl: accountTypeSegmentedControl)
+        view.heightAnchor.constraint(equalToConstant: 80).isActive = true
+        return view
+    }()
 
     private let emailTextField: UITextField = {
         return UITextField().textField(withPlaceholder: "Email",
@@ -50,6 +56,34 @@ class SignUpController: UIViewController {
                                        isSecureTextEntry: true)
     }()
     
+    private let accountTypeSegmentedControl: UISegmentedControl = {
+        let sc = UISegmentedControl(items: ["Rider", "Driver"])
+        sc.backgroundColor = .backgroundColor
+        sc.selectedSegmentTintColor = UIColor(white: 1, alpha: 0.87)
+        sc.selectedSegmentIndex = 0
+        return sc
+    }()
+    
+    private let signnUpButton: AuthButton = {
+        let button = AuthButton(type: .system)
+        button.setTitle("Sign Up", for: .normal)
+        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
+        return button
+    }()
+    
+    let alreadyHaveAccount: UIButton = {
+        let button = UIButton(type: .system)
+        let attributedTitle = NSMutableAttributedString(string: "Already have an account? ",
+                                                        attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16),
+                                                                     NSAttributedString.Key.foregroundColor: UIColor.lightGray])
+        attributedTitle.append(NSAttributedString(string: "Sign In",
+                                                  attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 16),
+                                                               NSAttributedString.Key.foregroundColor: UIColor.mainBlueTint]))
+        button.addTarget(self, action: #selector(handleShowLogin), for: .touchUpInside)
+        button.setAttributedTitle(attributedTitle, for: .normal)
+        return button
+    }()
+    
     //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,7 +93,12 @@ class SignUpController: UIViewController {
 
 extension SignUpController{
     //MARK: - Selectors
+    @objc
+    private func handleShowLogin() {
+        navigationController?.popViewController(animated: true)
+    }
 }
+
 
 extension SignUpController {
     //MARK: - Helper Functions
@@ -73,9 +112,11 @@ extension SignUpController {
         
         let stackView = UIStackView(arrangedSubviews: [emailContainerView,
                                                        fullNameContainerView,
-                                                       passwordContainerView])
+                                                       passwordContainerView,
+                                                       accountTypeContainerView,
+                                                       signnUpButton])
         stackView.axis = .vertical
-        stackView.distribution = .fillEqually
+        stackView.distribution = .fillProportionally
         stackView.spacing = 24
         
         view.addSubview(stackView)
@@ -85,6 +126,10 @@ extension SignUpController {
                          paddingTop: 40,
                          paddingLeft: 16,
                          paddingRight: 16)
+        
+        view.addSubview(alreadyHaveAccount)
+        alreadyHaveAccount.centerX(inView: view)
+        alreadyHaveAccount.anchor(bottom: view.safeAreaLayoutGuide.bottomAnchor, height: 32)
     }
 }
 

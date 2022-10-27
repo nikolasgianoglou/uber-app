@@ -16,6 +16,7 @@
 		172D71CA290730BD009645FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 172D71C9290730BD009645FB /* Assets.xcassets */; };
 		177F13502908292F00844285 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177F134F2908292F00844285 /* Color+.swift */; };
 		177F1352290883D300844285 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177F1351290883D300844285 /* SignUpController.swift */; };
+		17B83F21290A01990026741A /* AuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B83F20290A01990026741A /* AuthButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		172D71C9290730BD009645FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../Downloads/UberTutorial/UberTutorial/Assets.xcassets; sourceTree = "<group>"; };
 		177F134F2908292F00844285 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
 		177F1351290883D300844285 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		17B83F20290A01990026741A /* AuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 		17A13B012905CFAD004AA599 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				17B83F20290A01990026741A /* AuthButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				172D71C829072296009645FB /* UIView+.swift in Sources */,
+				17B83F21290A01990026741A /* AuthButton.swift in Sources */,
 				177F13502908292F00844285 /* Color+.swift in Sources */,
 				17295A0F290448D5001C7154 /* LoginController.swift in Sources */,
 				17295A0B290448D5001C7154 /* AppDelegate.swift in Sources */,
