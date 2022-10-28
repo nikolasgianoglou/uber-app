@@ -96,7 +96,10 @@ extension LoginController {
                 print("DEBUG: Failed to log user in with error \(error.localizedDescription)")
                 return
             }
-            print("Sucesfully logged user in....")
+
+            guard let controller = UIApplication.shared.keyWindow?.rootViewController as? HomeController else { return }
+            controller.configureUI()
+            self.dismiss(animated: true, completion: nil)
         }
     }
 }

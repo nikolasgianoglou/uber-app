@@ -119,7 +119,10 @@ extension SignUpController{
                           "fullname": fullname,
                           "accountType": accountTypeIndex] as [String: Any]
             Database.database().reference().child("users").child(uid).updateChildValues(values) { (error, dataBaseReference) in
-                print("Registered user with success")
+                
+                guard let controller = UIApplication.shared.keyWindow?.rootViewController as? HomeController else { return }
+                controller.configureUI()
+                self.dismiss(animated: true, completion: nil)
             }
             
         }
