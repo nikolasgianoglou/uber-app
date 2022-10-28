@@ -109,7 +109,7 @@ extension SignUpController{
         
         Auth.auth().createUser(withEmail: email, password: password) { (authDataResult, error) in
             if let error = error {
-                print("Failed to register user with error \(error)")
+                print("DEBUG: Failed to register user with error \(error.localizedDescription)")
                 return
             }
             
