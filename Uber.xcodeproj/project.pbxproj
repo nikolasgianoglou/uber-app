@@ -13,6 +13,7 @@
 		17295A17290448D8001C7154 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17295A15290448D8001C7154 /* LaunchScreen.storyboard */; };
 		172D71C829072296009645FB /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172D71C729072296009645FB /* UIView+.swift */; };
 		172D71CA290730BD009645FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 172D71C9290730BD009645FB /* Assets.xcassets */; };
+		17695BDE290C4BDC0067599C /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17695BDD290C4BDC0067599C /* HomeController.swift */; };
 		177F13502908292F00844285 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177F134F2908292F00844285 /* Color+.swift */; };
 		177F1352290883D300844285 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177F1351290883D300844285 /* SignUpController.swift */; };
 		17B83F21290A01990026741A /* AuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B83F20290A01990026741A /* AuthButton.swift */; };
@@ -30,6 +31,7 @@
 		17295A18290448D8001C7154 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		172D71C729072296009645FB /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		172D71C9290730BD009645FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../Downloads/UberTutorial/UberTutorial/Assets.xcassets; sourceTree = "<group>"; };
+		17695BDD290C4BDC0067599C /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		177F134F2908292F00844285 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
 		177F1351290883D300844285 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
 		17B83F20290A01990026741A /* AuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 			children = (
 				17295A0E290448D5001C7154 /* LoginController.swift */,
 				177F1351290883D300844285 /* SignUpController.swift */,
+				17695BDD290C4BDC0067599C /* HomeController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -140,7 +143,6 @@
 				D814F92AB7892F097810230A /* Pods-Uber.debug.xcconfig */,
 				94B03AEAF368CEE5E353F5E6 /* Pods-Uber.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -263,6 +265,7 @@
 				17B83F21290A01990026741A /* AuthButton.swift in Sources */,
 				177F13502908292F00844285 /* Color+.swift in Sources */,
 				17295A0F290448D5001C7154 /* LoginController.swift in Sources */,
+				17695BDE290C4BDC0067599C /* HomeController.swift in Sources */,
 				17295A0B290448D5001C7154 /* AppDelegate.swift in Sources */,
 				17295A0D290448D5001C7154 /* SceneDelegate.swift in Sources */,
 				177F1352290883D300844285 /* SignUpController.swift in Sources */,
